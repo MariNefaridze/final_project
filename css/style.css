@@ -100,7 +100,7 @@ body{
 }
 .paragraph{
     display: flex;
-    margin-top: 600px;
+    margin-top: 784px;
 }
 .poster{
     width: 300px;
@@ -109,6 +109,27 @@ body{
     padding: 200px 0 100px 50px;
     line-height: 21px;
     font-size: 20px;
+}
+blockquote {
+    margin: 0 auto;
+    padding: 1em;
+    border-left: 8px solid rgb(207, 146, 105);
+    font-style: italic;
+    padding:1.2em 30px 1.2em 75px;
+    line-height:1.6;
+    position: relative;
+    margin-bottom: 40px;
+  }
+.quotes{
+    margin-top: 90px;
+}
+blockquote::before{
+    content:"\201C";
+    color: rgb(207, 146, 105);
+    font-size: 4em;
+    position:absolute;
+    left: 10px;
+    top: -10px;
 }
 
 
@@ -143,4 +164,18 @@ body{
         background-size:120rem;
         background-repeat: no-repeat;
     }
+    .paragraph{
+        display: inline-block;
+        margin-top: 855px;
+    }
+    .poster{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+    .paragraphText{
+        margin-top: -125px;
+    }
+
 }
