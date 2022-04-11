@@ -96,7 +96,7 @@ header h1 {
 }
 
 body{
-    background-color: rgb(26, 25, 80);
+    background-color: #020024;
 }
 .paragraph{
     display: flex;
@@ -107,7 +107,7 @@ body{
 }
 .paragraphText{
     padding: 200px 0 100px 50px;
-    line-height: 21px;
+    line-height: 30px;
     font-size: 20px;
 }
 blockquote {
@@ -131,8 +131,6 @@ blockquote::before{
     left: 10px;
     top: -10px;
 }
-
-
 
 
 
