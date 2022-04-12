@@ -153,3 +153,15 @@ body::before {
     transform: translateZ(-1px) scale(1);
     z-index: -1;
 }
+.animation img{
+    width: 400px;
+    position: absolute;
+    right: 0;
+    animation: float 3s ease-in-out infinite;
+   
+}
+@keyframes float{
+    50%{
+        transform: translate(0,20px);
+    }
+}
