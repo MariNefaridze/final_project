@@ -14,7 +14,9 @@
     padding: 0 25px;
 }
 .logo{
-    width: 200px;
+    width: 150px;
+    background-color:rgba(243, 215, 162, 0.993) ;
+    border-radius: 50%;
 }
 .navigation{
     display: flex;
@@ -43,7 +45,7 @@
     500px 0 0 rgba(255,255,255,0.03) inset;
     padding: 35px 25px 45px 25px;
 
-}
+} 
 
 /* .nav-ul{
     width: 75%;
@@ -62,21 +64,62 @@
 .nav-ul li a:hover{
     color: rgb(207, 146, 105);
 } */
-.button{
-    position: absolute;
-    top: 4rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-.button .bar{
-    height: 3px;
-    width: 100%;
-    background-color: black;
+.hamburger{
+    position: relative;
+    width: 25px;
+    height: 4px;
+    background: white;
     border-radius: 10px;
+    z-index: 2;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hamburger::before,
+.hamburger::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background:white;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.hamburger::before{
+    top: -10px;
+    width: 25px;
+}
+.hamburger::after{
+    top: 10px;
+    width: 25px;
+}
+.toggle-menu{
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+}
+.hamburger,
+.toggle-menu{
+    display: none;
+}
+.navigation input:checked ~ .hamburger{
+    background: transparent;
+}
+.navigation input:checked ~ .hamburger::before{
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+.navigation input:checked ~ .hamburger::after{
+    top: 0;
+    transform: rotate(45deg);
+    width: 30px;
+}
+.navigation input:checked ~ .menu{
+    right:0;
+    box-shadow: -20px 0 40px rgba(0,0,0,0.3);
 }
 
 html {
@@ -268,24 +311,44 @@ form button i{
     padding-bottom: 20px;
 }
 
-@media (max-width:1000px){
 
-    .nav-ul{
-        gap: 20px;
-    }
-}
 
-@media (max-width:800px){
-    .button{
-        display: flex;
-    }
+@media (max-width:910px){
     .logo{
         display: none;
     }
-    .nav-ul{
-        /* display: none; */
+    .hamburger,
+    .toggle-menu{
+        display: block;
     }
-    .nav-ul{
+    .header{
+        padding: 20px 20px;
+    }
+    .menu{
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: linear-gradient(to right, #00093c, #2d0b00);
+        width: 300px;
+        height: 100%;
+        padding-top:65px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        
+    }
+    .menu li{
+        width: 100%;
+    }
+    .menu li a{
+        padding: 30px;
+        font-size: 24px;
+        box-shadow: 0 1px rgba(255,255,255,0.1) inset;
+    }
+
+    /* .nav-ul{
         flex-direction: column;
         justify-content: space-around;
         position: absolute;
@@ -302,7 +365,7 @@ form button i{
         margin-bottom: 20px;
         padding: 40px;
         font-size: 30px;
-    }
+    } */
     header::before{
         background-size:120rem;
         background-repeat: no-repeat;
