@@ -1,7 +1,4 @@
-/* .flex{
-    display: flex;
-    justify-content: space-between;
-} */
+
 .container{
     margin: 0 auto;
     width: 90%;
@@ -46,24 +43,6 @@
     padding: 35px 25px 45px 25px;
 
 } 
-
-/* .nav-ul{
-    width: 75%;
-    gap: 25px;
-}
-.nav-ul a{
-    text-decoration: none;
-}
-.logo{
-    width: 200px;
-} */
-/* .nav-ul li a{
-    color: white;
-    font-weight: bold;
-}
-.nav-ul li a:hover{
-    color: rgb(207, 146, 105);
-} */
 .hamburger{
     position: relative;
     width: 25px;
@@ -181,39 +160,7 @@ header h1 {
 body{
     background-color: #020024;
 }
-.fadedfx {
-    background-color: #fe5652;
-    visibility: hidden;
-  }
-  
-  .fadeIn {
-    animation-name: fadeIn;
-    -webkit-animation-name: fadeIn;
-    animation-duration: 1.5s;
-    -webkit-animation-duration: 1.5s;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-timing-function: ease-in-out;
-    visibility: visible !important;
-  }
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0.0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity: 0.0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
+
 .paragraph{
     display: flex;
     margin-top: 784px;
@@ -381,24 +328,6 @@ form button i{
         box-shadow: 0 1px rgba(255,255,255,0.1) inset;
     }
 
-    /* .nav-ul{
-        flex-direction: column;
-        justify-content: space-around;
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        height: 100vh;
-        transform: translate(100vw);
-        align-items: start;
-        background-color: #00093c;
-    }
-    .nav-ul li{
-        text-align: center;
-        margin-bottom: 20px;
-        padding: 40px;
-        font-size: 30px;
-    } */
     header::before{
         background-size:120rem;
         background-repeat: no-repeat;
