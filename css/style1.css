@@ -153,6 +153,7 @@ body::before {
     transform: translateZ(-1px) scale(1);
     z-index: -1;
 }
+
 .animations .moon{
     width: 400px;
     position: absolute;
@@ -176,6 +177,7 @@ body::before {
     animation: float 3s ease-in-out infinite;
     
 }
+
 .flying{
     width: 400px;
     position: absolute;
@@ -201,4 +203,77 @@ body::before {
     100% {
         left: 100%;
     }
+}
+
+
+
+
+@media (max-width:910px){
+    .logo{
+        display: none;
+    }
+    .hamburger,
+    .toggle-menu{
+        display: block;
+    }
+    .header{
+        padding: 20px 20px;
+    }
+    .menu{
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: linear-gradient(to right, #00093c, #2d0b00);
+        width: 300px;
+        height: 100%;
+        padding-top:65px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        display: none;
+        
+    }
+    .menu li{
+        width: 100%;
+    }
+    .menu li a{
+        padding: 30px;
+        font-size: 24px;
+        box-shadow: 0 1px rgba(255,255,255,0.1) inset;
+    }
+
+    header::before{
+        background-size:120rem;
+        background-repeat: no-repeat;
+    }
+    .animations .moon{
+        left: 0;
+        right: 0;
+        top: 90px;
+    }
+    .animations .princeRose{
+        position: absolute;
+        right: 0;
+        bottom: -1000px;
+    }
+    .animations .flying{
+        bottom: -1400px;
+    }
+    header::before{
+        zoom: 50%;
+
+    }
+    body::before{
+        zoom: 50%;
+    }
+}
+@media (max-width:675px){
+    header::before{
+       bottom: -300px;
+
+    }
+    body::before{
+        bottom: -400px;
 }
