@@ -125,85 +125,10 @@ header,
 header:before {
     background: 50% 50% / cover;
 }
-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-    background:url(../images/stars.png);
-    background-size: cover;
-    transform-origin: center center 0;
-    transform: translateZ(-1px) scale(1);
-    z-index: -1;
-}
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: -20px;
-    bottom: -900px;
-    display: block;
-    background:url(../images/stars.png);
-    background-size: cover;
-    transform-origin: center center 0;
-    transform: translateZ(-1px) scale(1);
-    z-index: -1;
-}
 
-.animations .moon{
-    width: 400px;
-    position: absolute;
-    right: 20px;
-    animation: float 3s ease-in-out infinite;
-   
-}
 
-.animations .prince{
-    width: 400px;
-    position: absolute;
-    left: 20px;
-    bottom: -450px;
-    animation: float 3s ease-in-out infinite;
-}
-.animations .princeRose{
-    width: 400px;
-    position: absolute;
-    right: 20px;
-    bottom: -700px;
-    animation: float 3s ease-in-out infinite;
-    
-}
 
-.flying{
-    width: 400px;
-    position: absolute;
-    bottom: -1200px;
-    right: 0;
-    animation: flying 15s linear 2s infinite reverse;
-}
-@keyframes float{
-    50%{
-        transform: translate(0,20px);
-    }
-}
-@keyframes flying {
-    0% {
-        left: 0;
-    }
-    20% {
-        left: 20%;
-    }
-    50% {
-        left: 50%;
-    }
-    100% {
-        left: 100%;
-    }
-}
+
 
 
 
@@ -232,7 +157,6 @@ body::before {
         padding-top:65px;
         border-top-left-radius: 50px;
         border-bottom-left-radius: 50px;
-        
     }
     .menu li{
         width: 100%;
@@ -241,39 +165,5 @@ body::before {
         padding: 30px;
         font-size: 24px;
         box-shadow: 0 1px rgba(255,255,255,0.1) inset;
-    }
-
-    header::before{
-        background-size:120rem;
-        background-repeat: no-repeat;
-    }
-    .animations .moon{
-        left: 0;
-        right: 0;
-        top: 90px;
-    }
-    .animations .princeRose{
-        position: absolute;
-        right: 0;
-        bottom: -1000px;
-    }
-    .animations .flying{
-        bottom: -1400px;
-    }
-    header::before{
-        zoom: 50%;
-
-    }
-    body::before{
-        zoom: 50%;
-    }
-}
-@media (max-width:675px){
-    header::before{
-       bottom: -300px;
-
-    }
-    body::before{
-        bottom: -400px;
     }
 }
