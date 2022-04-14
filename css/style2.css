@@ -206,6 +206,10 @@ header::before {
         width: 700px;
         margin-top: 60px;
     }
+    .gallery{
+       grid-template-columns:1fr 1fr;
+    }
+    
     
 }
 
@@ -241,5 +245,13 @@ header::before {
         padding: 30px;
         font-size: 24px;
         box-shadow: 0 1px rgba(255,255,255,0.1) inset;
+    }
+}
+@media (max-width:768px){
+    .gallery{
+        grid-template-columns: 1fr;
+    }
+    .gallery img{
+        width: 100%;
     }
 }
