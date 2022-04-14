@@ -121,12 +121,61 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
 }
+header {
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+    text-align: center;
+    text-transform: uppercase;
+}
 header,
 header:before {
     background: 50% 50% / cover;
 }
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background:url(../images/littleprincecartoon2.jpg);
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+    background-position: 62%;
+}
+.cartoon_cover{
+    display: flex;
+}
+.cartoon{
+    margin-top: 700px;
+}
+.title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 80px 0;
+    font-size: 50px;
+    
+}
+.movie_text{
+    padding: 60px 80px 50px 80px;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    margin-left: 60px;
+    border-radius: 15%;
+    box-shadow:  10px 10px 10px rgba(0, 0, 0, 0.1);
 
-
+}
+.movie_text p{
+    font-size: 20px;
+    font-weight: bold;
+}
 
 
 
