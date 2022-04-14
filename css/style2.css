@@ -167,7 +167,7 @@ header::before {
 .movie_text{
     padding: 60px 80px 50px 80px;
     background: linear-gradient(to right, #00093c, #2d0b00);
-    margin-left: 60px;
+    margin-left: 20px;
     border-radius: 15%;
     box-shadow:  10px 10px 10px rgba(0, 0, 0, 0.1);
 
@@ -181,7 +181,17 @@ header::before {
 
 
 
-
+@media (max-width:997px){
+    .cartoon_cover{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .movie_text{
+        width: 700px;
+        margin-top: 60px;
+    }
+    
+}
 @media (max-width:910px){
     .logo{
         display: none;
