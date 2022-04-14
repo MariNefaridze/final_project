@@ -176,6 +176,16 @@ header::before {
     font-size: 20px;
     font-weight: bold;
 }
+.gallery{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 90px;
+}
+
+.gallery img{
+    width: 300px;
+}
 
 
 
@@ -192,6 +202,7 @@ header::before {
     }
     
 }
+
 @media (max-width:910px){
     .logo{
         display: none;
