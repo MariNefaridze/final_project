@@ -154,7 +154,7 @@ header::before {
     display: flex;
 }
 .cartoon{
-    margin-top: 700px;
+    margin-top: 600px;
 }
 .title{
     display: flex;
@@ -186,11 +186,107 @@ header::before {
 }
 .gallery img{
     width: 300px;
-    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1));
-    transition: 1s;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+    transition:1s;
 }
 .gallery img:hover{
     transform: scale(1.2);
+}
+footer{
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    margin: 120px -120px -20px;
+    padding-top: 50px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;   
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+}
+.footer-logo{
+    width: 150px;
+    margin-bottom: 30px;
+    
+}
+.nav-footer a{
+    color: white;
+    text-decoration: none;
+    margin-left: -27px;
+}
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+
+}
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    margin-bottom: 50px;
+}
+form i{
+    font-size:18px;
+    margin-right: 10px;
+}
+form input{
+    width: 100%;
+    background: transparent;
+    color: white;
+    border: 0;
+    outline: none;
+}
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+form button i{
+    font-size: 16px;
+    color: white;
+}
+.social-icons i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: black;
+    background: white;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+.social-icons i:hover{
+    color: white;
+    background:black;
+}
+.hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid white;
+    margin: 20px auto;
+}
+.copyright{
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 
