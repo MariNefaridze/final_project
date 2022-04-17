@@ -150,6 +150,21 @@ header::before {
     min-height: 100vh;
     background-position: 62%;
 }
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -300rem;
+    display: block;
+    zoom:40%;
+    background:url(../images/glow.png);
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(1);
+    z-index: -1;
+}
 .cartoon_cover{
     display: flex;
 }
@@ -304,6 +319,11 @@ form button i{
     }
     .gallery{
        grid-template-columns:1fr 1fr;
+    }
+    body::before {
+        bottom: -500rem;
+        zoom:30%;
+        
     }
     
     
