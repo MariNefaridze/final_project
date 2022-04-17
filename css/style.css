@@ -187,8 +187,12 @@ blockquote::before{
     left: 10px;
     top: -10px;
 }
-.card{
-    background: linear-gradient(to right, #00093c, #2d0b00);
+.cards{
+    text-align: center;
+    margin-right: 20px;
+}
+.cards-flex{
+    margin-top: 150px;
 }
 footer{
     background: linear-gradient(to right, #00093c, #2d0b00);
