@@ -194,6 +194,9 @@ blockquote::before{
 .cards-flex{
     margin-top: 150px;
 }
+.cards h3{
+    font-size: 40px;
+}
 footer{
     background: linear-gradient(to right, #00093c, #2d0b00);
     color: #fff;

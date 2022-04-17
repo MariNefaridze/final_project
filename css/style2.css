@@ -207,6 +207,12 @@ body::before {
 .gallery img:hover{
     transform: scale(1.2);
 }
+.movie-link{
+    margin-top: 160px;
+    align-self: center;
+    display: flex;
+    margin-bottom: 160px;
+}
 footer{
     background: linear-gradient(to right, #00093c, #2d0b00);
     color: #fff;
