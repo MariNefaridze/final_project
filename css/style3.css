@@ -1,9 +1,11 @@
+
 .container{
     margin: 0 auto;
     width: 90%;
 }
 body{
     background-color: #020024;
+    font-family: "BPG Arial", sans-serif;
 }
 *{
     color: white;
