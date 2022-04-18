@@ -80,6 +80,10 @@ form .submit-button input{
     padding: 0 20px 0 22px;
 
 }
+form .submit-button input:hover{
+    color: black;
+    background-color: white;
+}
 form .icons i{
     width: 40px;
     height: 40px;
@@ -95,4 +99,14 @@ form .icons i{
 form .icons i:hover{
     color: white;
     background:black;
+}
+
+
+@media( max-width:480px){
+    form .info{
+        flex-direction: column;
+    }
+    form .info .item{
+        width: 100%;
+    }
 }
