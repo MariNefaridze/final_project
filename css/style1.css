@@ -7,9 +7,15 @@ body{
 }
 .header-navigation{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0 25px;
 }
 .logo{
@@ -18,16 +24,33 @@ body{
     border-radius: 50%;
 }
 .navigation{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .menu{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     z-index: 1;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 .menu li a{
@@ -37,10 +60,14 @@ body{
     padding: 40px 25px;
     font-size: 18px;
     line-height: 1;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 .menu li a:hover{
-    box-shadow: 0 -5px 0px white inset,
+    -webkit-box-shadow: 0 -5px 0px white inset,
+    500px 0 0 rgba(255,255,255,0.03) inset;
+            box-shadow: 0 -5px 0px white inset,
     500px 0 0 rgba(255,255,255,0.03) inset;
     padding: 35px 25px 45px 25px;
 
@@ -53,6 +80,8 @@ body{
     border-radius: 10px;
     z-index: 2;
     cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 .hamburger::before,
@@ -63,6 +92,8 @@ body{
     right: 0;
     background:white;
     border-radius: 10px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 .hamburger::before{
@@ -90,17 +121,22 @@ body{
 }
 .navigation input:checked ~ .hamburger::before{
     top: 0;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     width: 30px;
 }
 .navigation input:checked ~ .hamburger::after{
     top: 0;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
     width: 30px;
 }
 .navigation input:checked ~ .menu{
     right:0;
-    box-shadow: -20px 0 40px rgba(0,0,0,0.3);
+    -webkit-box-shadow: -20px 0 40px rgba(0,0,0,0.3);
+            box-shadow: -20px 0 40px rgba(0,0,0,0.3);
 }
 body{
     background-color: #020024;
@@ -117,8 +153,10 @@ body {
     color: white;
     margin: 0;
     padding: 0;
-    perspective: 1px;
-    transform-style: preserve-3d;
+    -webkit-perspective: 1px;
+            perspective: 1px;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
     height: 100%;
     width: 100%;
     overflow-y: scroll;
@@ -138,8 +176,11 @@ header::before {
     display: block;
     background:url(../images/stars.png);
     background-size: cover;
-    transform-origin: center center 0;
-    transform: translateZ(-1px) scale(1);
+    -webkit-transform-origin: center center 0;
+        -ms-transform-origin: center center 0;
+            transform-origin: center center 0;
+    -webkit-transform: translateZ(-1px) scale(1);
+            transform: translateZ(-1px) scale(1);
     z-index: -1;
 }
 body::before {
@@ -152,8 +193,11 @@ body::before {
     display: block;
     background:url(../images/stars.png);
     background-size: cover;
-    transform-origin: center center 0;
-    transform: translateZ(-1px) scale(1);
+    -webkit-transform-origin: center center 0;
+        -ms-transform-origin: center center 0;
+            transform-origin: center center 0;
+    -webkit-transform: translateZ(-1px) scale(1);
+            transform: translateZ(-1px) scale(1);
     z-index: -1;
 }
 
@@ -161,7 +205,8 @@ body::before {
     width: 400px;
     position: absolute;
     right: 20px;
-    animation: float 3s ease-in-out infinite;
+    -webkit-animation: float 3s ease-in-out infinite;
+            animation: float 3s ease-in-out infinite;
    
 }
 
@@ -170,14 +215,16 @@ body::before {
     position: absolute;
     left: 20px;
     bottom: -450px;
-    animation: float 3s ease-in-out infinite;
+    -webkit-animation: float 3s ease-in-out infinite;
+            animation: float 3s ease-in-out infinite;
 }
 .animations .princeRose{
     width: 400px;
     position: absolute;
     right: 20px;
     bottom: -700px;
-    animation: float 3s ease-in-out infinite;
+    -webkit-animation: float 3s ease-in-out infinite;
+            animation: float 3s ease-in-out infinite;
     
 }
 
@@ -188,9 +235,30 @@ body::before {
     right: 0;
     animation: flying 15s linear 2s infinite reverse;
 }
+@-webkit-keyframes float{
+    50%{
+        -webkit-transform: translate(0,20px);
+                transform: translate(0,20px);
+    }
+}
 @keyframes float{
     50%{
-        transform: translate(0,20px);
+        -webkit-transform: translate(0,20px);
+                transform: translate(0,20px);
+    }
+}
+@-webkit-keyframes flying {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 20%;
+    }
+    50% {
+        left: 50%;
+    }
+    100% {
+        left: 100%;
     }
 }
 @keyframes flying {
@@ -223,12 +291,21 @@ body::before {
         padding: 20px 20px;
     }
     .menu{
-        justify-content: start;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         position: fixed;
         top: 0;
         right: 0;
+        background: -webkit-gradient(linear, left top, right top, from(#00093c), to(#2d0b00));
+        background: -o-linear-gradient(left, #00093c, #2d0b00);
         background: linear-gradient(to right, #00093c, #2d0b00);
         width: 300px;
         height: 100%;
@@ -243,7 +320,8 @@ body::before {
     .menu li a{
         padding: 30px;
         font-size: 24px;
-        box-shadow: 0 1px rgba(255,255,255,0.1) inset;
+        -webkit-box-shadow: 0 1px rgba(255,255,255,0.1) inset;
+                box-shadow: 0 1px rgba(255,255,255,0.1) inset;
     }
 
     header::before{
